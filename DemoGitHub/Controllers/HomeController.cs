@@ -18,9 +18,25 @@ namespace DemoGitHub.Controllers
             _logger = logger;
         }
 
-        public string Index()
+        public IActionResult Index()
         {
-            return "teste dsfsf sdfsdf";
+            Person person = new Person();
+            person.PersonId = 1;
+            person.Name = "Jonh Edson";
+            person.Age = 48;
+            person.Location = "Tijuca";
+
+
+            return View(person);
+        }
+
+        [HttpPost]
+        public IActionResult Index(Person person)
+        {
+            
+
+
+            return View(person);
         }
 
         public IActionResult Privacy()
