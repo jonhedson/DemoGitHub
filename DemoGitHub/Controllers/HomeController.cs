@@ -18,9 +18,9 @@ namespace DemoGitHub.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index()
         {
-            return View();
+            return "teste";
         }
 
         public IActionResult Privacy()
