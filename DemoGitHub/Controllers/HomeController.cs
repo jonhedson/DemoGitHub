@@ -11,16 +11,10 @@ namespace DemoGitHub.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
             Person person = new Person();
+            
             person.PersonId = 1;
             person.Name = "Jonh Edson";
             person.Age = 48;

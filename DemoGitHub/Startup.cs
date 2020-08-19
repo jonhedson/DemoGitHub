@@ -46,7 +46,7 @@ namespace DemoGitHub
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Alunos}/{action=Index}/{id?}");
             });
         }
     }
