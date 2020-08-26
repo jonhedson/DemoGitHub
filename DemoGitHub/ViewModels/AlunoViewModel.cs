@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DemoGitHub.Models
+namespace DemoGitHub.ViewModels
 {
-    public class Aluno
+    public class AlunoViewModel
     {
         public int AlunoId { get; set; }
         [Required]
@@ -14,6 +14,5 @@ namespace DemoGitHub.Models
         public string Campus { get; set; }
         public string Curso { get; set; }
         public string Sexo { get; set; }
-        public DateTime Aniversario { get; set; }
     }
 }
