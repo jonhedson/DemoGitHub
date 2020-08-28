@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoGitHub.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace DemoGitHub.ViewModels
         public string Campus { get; set; }
         public string Curso { get; set; }
         public string Sexo { get; set; }
+
+        public Aluno aluno { get; set; }
+
     }
 }

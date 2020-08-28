@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using DemoGitHub.Models;
 using Microsoft.AspNetCore.Http;
 using DemoGitHub.Repository;
+using DemoGitHub.ViewModels;
 
 namespace DemoGitHub.Controllers
 {
     public class AlunosController : Controller
     {
+        private readonly AlunoRepository alunoRepository;
         #region 0 - Criando um objeto e enviando para a View()
         //public IActionResult Index()
         //{
@@ -36,25 +38,37 @@ namespace DemoGitHub.Controllers
         #region Method Index -> GetAllAlunos - OK
         public ActionResult Index()
         {
-            return View(AlunoRepository.GetalunoList());
+            //var alunoRepository = new AlunoRepository();
+            //var alunos = new List<AlunoViewModel>();
+
+            IEnumerable<Aluno> alunos = AlunoRepository.GetalunoList();
+            IEnumerable<AlunoViewModel> alunosviewmodel = alunos.Select(x => new AlunoViewModel
+            {
+                AlunoId = x.AlunoId,
+                Nome = x.Nome,
+                Campus = x.Campus,
+                Curso = x.Curso,
+                Sexo =  x.Sexo
+            });
+            return View(alunosviewmodel);
         }
 
         #endregion
 
         #region Methods Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
-        public ActionResult Create(Aluno aluno) // Recolher dados do formulario
-        {
+        //[HttpPost]
+        //public ActionResult Create(AlunoViewModel aluno) // Recolher dados do formulario
+        //{
+            
+        //    AlunoRepository.Create(aluno);
 
-            AlunoRepository.Create(aluno);
-
-            return RedirectToAction("Index");
-        }
+        //    return RedirectToAction("Index");
+        //}
         #endregion
 
         //#region Methods Edit
