@@ -6,6 +6,13 @@
 
 <h1>Index</h1>
 
+<form asp-controller="Alunos" asp-action="Buscar">
+    <p>
+        Title: <input type="text" name="pesquisa">
+        <input type="submit" value="Pesquisa" />
+    </p>
+</form>
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -49,9 +56,9 @@
                 @Html.DisplayFor(modelItem => item.Sexo)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new {  id=item.AlunoId  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.AlunoId  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.AlunoId  })
             </td>
         </tr>
 }
