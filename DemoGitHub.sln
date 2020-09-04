@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoGitHub", "DemoGitHub\DemoGitHub.csproj", "{9179F03B-6BDE-44A4-A0B7-0B73DEDAD421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoEFCore", "DemoEFCore\DemoEFCore.csproj", "{8949BB27-A17D-415E-B45F-96F72296EEB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9179F03B-6BDE-44A4-A0B7-0B73DEDAD421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9179F03B-6BDE-44A4-A0B7-0B73DEDAD421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9179F03B-6BDE-44A4-A0B7-0B73DEDAD421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
