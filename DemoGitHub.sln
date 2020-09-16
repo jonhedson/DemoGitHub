@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoGitHub", "DemoGitHub\DemoGitHub.csproj", "{9179F03B-6BDE-44A4-A0B7-0B73DEDAD421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoEFCore", "DemoEFCore\DemoEFCore.csproj", "{8949BB27-A17D-415E-B45F-96F72296EEB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoEFCore", "DemoEFCore\DemoEFCore.csproj", "{8949BB27-A17D-415E-B45F-96F72296EEB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{DFB9E9F5-1649-44BA-89EE-3DDFEEE550C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLinq", "DemoLinq\DemoLinq.csproj", "{D53FBF74-5656-41EF-BA6B-524CC01DE09A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8949BB27-A17D-415E-B45F-96F72296EEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB9E9F5-1649-44BA-89EE-3DDFEEE550C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB9E9F5-1649-44BA-89EE-3DDFEEE550C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB9E9F5-1649-44BA-89EE-3DDFEEE550C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB9E9F5-1649-44BA-89EE-3DDFEEE550C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

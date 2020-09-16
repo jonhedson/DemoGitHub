@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using DemoGitHub.Models;
 
 namespace DemoGitHub.Repository
@@ -27,9 +25,9 @@ namespace DemoGitHub.Repository
         // Lista com alunos iniciais da Aplicação
         private static List<Aluno> alunoList = new List<Aluno>
         {
-            new Aluno(){ AlunoId = 1, Nome = "Arthur", Campus = "São josé", Curso = "EDC", Sexo = "M"},
-            new Aluno(){ AlunoId = 2, Nome = "Damaris", Campus = "São josé", Curso = "EDC", Sexo = "F"},
-            new Aluno(){ AlunoId = 3, Nome = "Leonardo", Campus = "São josé", Curso = "EDC", Sexo = "M"},
+            new Aluno(){ AlunoId = 1, Nome = "Arthur", Campus = "São josé", Curso = "EDC", Sexo = "M", Aniversario = new DateTime(2010,10,09)},
+            new Aluno(){ AlunoId = 2, Nome = "Damaris", Campus = "São josé", Curso = "EDC", Sexo = "F", Aniversario=DateTime.Now},
+            new Aluno(){ AlunoId = 3, Nome = "Leonardo", Campus = "São josé", Curso = "EDC", Sexo = "M", Aniversario=DateTime.Now},
         };
 
         // Adiciono o aluno criado a partir do Formulário da View na Lista
@@ -46,8 +44,10 @@ namespace DemoGitHub.Repository
 
         public static void Create(Aluno aluno)
         {
-            AddId();
+            aluno.AlunoId = GetId();
             AddAluno(aluno);
+            AddId();
+            
         }
 
         //Buscar o id do aluno
@@ -63,6 +63,7 @@ namespace DemoGitHub.Repository
                     resultado.Campus = a.Campus;
                     resultado.Curso = a.Curso;
                     resultado.Sexo = a.Sexo;
+                    resultado.Aniversario = a.Aniversario;
                     break;
                 }
             }
@@ -79,6 +80,7 @@ namespace DemoGitHub.Repository
                     a.Campus = alunoUpdate.Campus;
                     a.Curso = alunoUpdate.Curso;
                     a.Sexo = alunoUpdate.Sexo;
+                    a.Aniversario = alunoUpdate.Aniversario;
                     break;
                 }
             }

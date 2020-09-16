@@ -15,6 +15,7 @@ namespace DemoGitHub.ViewModels
         public string Campus { get; set; }
         public string Curso { get; set; }
         public string Sexo { get; set; }
+        public DateTime Aniversario { get; set; }
 
         public Aluno aluno { get; set; }
 

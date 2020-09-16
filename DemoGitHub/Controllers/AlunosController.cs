@@ -29,7 +29,8 @@ namespace DemoGitHub.Controllers
                 Nome = x.Nome,
                 Campus = x.Campus,
                 Curso = x.Curso,
-                Sexo =  x.Sexo
+                Sexo =  x.Sexo,
+                Aniversario = x.Aniversario
             });
             return View(alunosviewmodel);
         }
@@ -60,8 +61,8 @@ namespace DemoGitHub.Controllers
                 Nome = aluno.Nome,
                 Campus = aluno.Campus,
                 Curso = aluno.Curso,
-                Sexo = aluno.Sexo
-
+                Sexo = aluno.Sexo,
+                Aniversario = aluno.Aniversario
             };
             return View(alunoviewmodel);
         }
@@ -78,7 +79,9 @@ namespace DemoGitHub.Controllers
                 aluno.Campus = collection["Campus"];
                 aluno.Curso = collection["Curso"];
                 aluno.Sexo = collection["Sexo"];
-                
+                aluno.Aniversario = DateTime.Parse(collection["Aniversario"]);
+                //aluno.Aniversario = Convert.ToDateTime(collection["Aniversario"]);
+
 
                 AlunoRepository.EditAluno(id, aluno);
                 return RedirectToAction(nameof(Index));
@@ -101,7 +104,8 @@ namespace DemoGitHub.Controllers
                 Nome = aluno.Nome,
                 Campus = aluno.Campus,
                 Curso = aluno.Curso,
-                Sexo = aluno.Sexo
+                Sexo = aluno.Sexo,
+                Aniversario = aluno.Aniversario
 
             };
             return View(alunoviewmodel);
@@ -133,7 +137,8 @@ namespace DemoGitHub.Controllers
                 Nome = aluno.Nome,
                 Campus = aluno.Campus,
                 Curso = aluno.Curso,
-                Sexo = aluno.Sexo
+                Sexo = aluno.Sexo,
+                Aniversario = aluno.Aniversario
 
             };
             return View(alunoviewmodel);
@@ -151,7 +156,8 @@ namespace DemoGitHub.Controllers
                 Nome = x.Nome,
                 Campus = x.Campus,
                 Curso = x.Curso,
-                Sexo = x.Sexo
+                Sexo = x.Sexo,
+                Aniversario = x.Aniversario
             });
             return View(alunosviewmodel);
         }
