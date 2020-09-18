@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Models;
+using MvcMovie.Repository;
 
 namespace MvcMovie.Controllers
 {
@@ -19,10 +21,23 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
+            //var movie = MovieRepository.ReleaseToday();
 
-            return View(await _context.Movies.ToListAsync());
+            var movies = _context.Movies;
+
+            // Consulta para Hoje
+            //var moviestoday = movies.Where(m => (m.ReleaseDate.Month == DateTime.Now.Month
+                //&& m.ReleaseDate.Day == DateTime.Now.Day));
+
+            //var moviesascending = movies.Where();
+            //DateTime.ParseExact(Movie.ReleaseDate(), "dd/MM/yyyy", new CultureInfo("pt-BR"))
+
+
+            return View(movies);
+            
+            //return View(_context.Movies.ToListAsync());
         }
 
         // GET: Movies/Details/5
@@ -35,6 +50,7 @@ namespace MvcMovie.Controllers
 
             var movie = await _context.Movies
                 .FirstOrDefaultAsync(m => m.MovieId == id);
+
             if (movie == null)
             {
                 return NotFound();
@@ -76,6 +92,7 @@ namespace MvcMovie.Controllers
             }
 
             var movie = await _context.Movies.FindAsync(id);
+
             if (movie == null)
             {
                 return NotFound();

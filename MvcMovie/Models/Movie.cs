@@ -6,6 +6,7 @@ namespace MvcMovie.Models
     public class Movie
     {
         public int MovieId { get; set; }
+        [Required]
         public string Title { get; set; }
 
         [DataType(DataType.Date)]
