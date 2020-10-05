@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace MvcMovie.Models
+namespace BLL.Models
 {
     public class Movie
     {
@@ -12,6 +14,6 @@ namespace MvcMovie.Models
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
         public string Genre { get; set; }
-        public  decimal Prime { get; set; }
+        public decimal Prime { get; set; }
     }
 }

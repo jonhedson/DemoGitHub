@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoEFCore", "DemoEFCore\De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{DFB9E9F5-1649-44BA-89EE-3DDFEEE550C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLinq", "DemoLinq\DemoLinq.csproj", "{D53FBF74-5656-41EF-BA6B-524CC01DE09A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoLinq", "DemoLinq\DemoLinq.csproj", "{D53FBF74-5656-41EF-BA6B-524CC01DE09A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0DAABD46-C7BE-42ED-A5A9-985EFBDE9B81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{01E25F44-B07D-4C6A-92C5-2CAA4A7537DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D53FBF74-5656-41EF-BA6B-524CC01DE09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DAABD46-C7BE-42ED-A5A9-985EFBDE9B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DAABD46-C7BE-42ED-A5A9-985EFBDE9B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DAABD46-C7BE-42ED-A5A9-985EFBDE9B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DAABD46-C7BE-42ED-A5A9-985EFBDE9B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E25F44-B07D-4C6A-92C5-2CAA4A7537DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E25F44-B07D-4C6A-92C5-2CAA4A7537DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E25F44-B07D-4C6A-92C5-2CAA4A7537DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E25F44-B07D-4C6A-92C5-2CAA4A7537DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

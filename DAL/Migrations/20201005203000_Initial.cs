@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MvcMovie.Migrations
+namespace DAL.Migrations
 {
     public partial class Initial : Migration
     {
@@ -13,7 +13,7 @@ namespace MvcMovie.Migrations
                 {
                     MovieId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(nullable: true),
+                    Title = table.Column<string>(nullable: false),
                     ReleaseDate = table.Column<DateTime>(nullable: false),
                     Genre = table.Column<string>(nullable: true),
                     Prime = table.Column<decimal>(nullable: false)
